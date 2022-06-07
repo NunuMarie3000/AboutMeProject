@@ -1,5 +1,8 @@
 "use strict"
+<<<<<<< HEAD
 "use strict"
+=======
+>>>>>>> 2271fb5da0cf052a2a605354e73f319aba6f430f
 //greetings prompt at webpage load
 let userName = prompt("Hello, beautiful Human! What is your name?");
 alert("Nice to meet you, " + userName + ". Welcome to my quiz!");
@@ -61,3 +64,7 @@ function quizTime(){
 	alert("Thank you so much for taking my quiz, " + userName);
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 2271fb5da0cf052a2a605354e73f319aba6f430f
