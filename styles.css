@@ -1,5 +1,99 @@
+body{
+	background-image: url("https://scontent.fmem1-2.fna.fbcdn.net/v/t1.6435-9/92458154_2765512150168656_8733070119510474752_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=174925&_nc_ohc=TcYFnHStyvkAX_v0HE6&_nc_ht=scontent.fmem1-2.fna&oh=00_AT-hK_GAEM6Ah4UYFXWntl6aBLfWDwFyVv_Mk1cBcVvwDg&oe=62C6E185");
+	height: 100vh;
+	background-position: center; 
+	background-repeat: no-repeat;
+	background-color: #4C3025;
+} 
+
 h1{
+	 background-color: rgb(254, 254, 254, 0.7);
+	 margin: auto;
+	 margin-bottom: 70px;
+	 padding: 20px;
+	 border: 1px solid #888;
+	 width: 80%;
+	 border-radius: 30px;
+	 text-align: center;
+	 font-family: sans-serif;
+}
+
+h3{
+	margin-left: 10px;
+	font-size: 20px;
+	font-family: sans-serif;
 	text-align: center;
-	border-width: 1px;
-	border-style: solid;
+}
+
+h4{
+	text-align: center;
+	font-size: 20px;
+}
+
+p{
+	margin: 20px 20px 0px 20px;
+	font-size: 20px;
+}
+
+li{
+	font-size: 20px;
+}
+
+#content{
+	margin-bottom: 10px;
+	justify-content: right;
+}
+
+#bio-container{
+	display: flex;
+	 background-color: rgb(254, 254, 254, 0.7);
+	 padding: 5px;
+	 border: 1px solid #888;
+	 width: 80%;
+	 border-radius: 30px;
+	 margin-bottom: 10px;
+}
+
+#school{
+	display: flex;
+	 background-color: rgb(254, 254, 254, 0.7);
+	 padding: 5px;
+	 border: 1px solid #888;
+	 width: 80%;
+	 border-radius: 30px;
+	margin-bottom: 10px;
+}
+
+#job-container{
+	display: flex;
+	 background-color: rgb(254, 254, 254, 0.7);
+	 padding: 5px;
+	 border: 1px solid #888;
+	 width: 80%;
+	 border-radius: 30px;
+	margin-bottom: 10px;
+}
+
+#goals-container{
+	display: flex;
+	 background-color: rgb(254, 254, 254, 0.7);
+	 padding: 5px;
+	 border: 1px solid #888;
+	 width: 80%;
+	 border-radius: 30px;
+	margin-bottom: 10px;
+}
+
+#button-container{
+	 background-color: rgb(254, 254, 254, 0.7);
+	 padding: 5px;
+	 border: 1px solid #888;
+	 width: 80%;
+	 border-radius: 30px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+#button{
+	text-align: center;
 }
