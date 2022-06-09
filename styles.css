@@ -1,28 +1,27 @@
 body{
-	background-image: url("https://scontent.fmem1-2.fna.fbcdn.net/v/t1.6435-9/92458154_2765512150168656_8733070119510474752_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=174925&_nc_ohc=TcYFnHStyvkAX_v0HE6&_nc_ht=scontent.fmem1-2.fna&oh=00_AT-hK_GAEM6Ah4UYFXWntl6aBLfWDwFyVv_Mk1cBcVvwDg&oe=62C6E185");
-	height: 100vh;
-	background-position: center; 
+	background-image:url("https://scontent-atl3-1.xx.fbcdn.net/v/t1.6435-9/187459170_3856467861073074_4578499984045444436_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=d4W9Ft1iN5oAX9FHTxA&_nc_ht=scontent-atl3-1.xx&oh=00_AT9njP7pBnOb2ZGTGAQqJXky1A1yJ0MbIrJRfuQjHyK97w&oe=62C74A29");
+	height: 20vh;
 	background-repeat: no-repeat;
 	background-color: #4C3025;
 } 
 
 h1{
 	 background-color: rgb(254, 254, 254, 0.7);
-	 margin: auto;
-	 margin-bottom: 70px;
+	 margin-bottom: 20px;
 	 padding: 20px;
 	 border: 1px solid #888;
 	 width: 80%;
 	 border-radius: 30px;
 	 text-align: center;
 	 font-family: sans-serif;
+	 margin-right: 20px;
 }
 
 h3{
 	margin-left: 10px;
 	font-size: 20px;
 	font-family: sans-serif;
-	text-align: center;
+	text-align: left;
 }
 
 h4{
@@ -31,8 +30,8 @@ h4{
 }
 
 p{
-	margin: 20px 20px 0px 20px;
 	font-size: 20px;
+	margin-left: 20px;
 }
 
 li{
@@ -40,12 +39,12 @@ li{
 }
 
 #content{
-	margin-bottom: 10px;
 	justify-content: right;
+	margin-right: 250px;
 }
 
 #bio-container{
-	display: flex;
+	
 	 background-color: rgb(254, 254, 254, 0.7);
 	 padding: 5px;
 	 border: 1px solid #888;
@@ -55,7 +54,7 @@ li{
 }
 
 #school{
-	display: flex;
+	
 	 background-color: rgb(254, 254, 254, 0.7);
 	 padding: 5px;
 	 border: 1px solid #888;
@@ -65,7 +64,7 @@ li{
 }
 
 #job-container{
-	display: flex;
+	
 	 background-color: rgb(254, 254, 254, 0.7);
 	 padding: 5px;
 	 border: 1px solid #888;
@@ -75,7 +74,7 @@ li{
 }
 
 #goals-container{
-	display: flex;
+	
 	 background-color: rgb(254, 254, 254, 0.7);
 	 padding: 5px;
 	 border: 1px solid #888;
@@ -84,13 +83,23 @@ li{
 	margin-bottom: 10px;
 }
 
+#char-container{
+	
+	 background-color: rgb(254, 254, 254, 0.7);
+	 padding: 5px;
+	 border: 1px solid #888;
+	 width: 80%;
+	 border-radius: 30px;
+	 margin-bottom: 10px;
+}
+
 #button-container{
 	 background-color: rgb(254, 254, 254, 0.7);
 	 padding: 5px;
 	 border: 1px solid #888;
 	 width: 80%;
 	 border-radius: 30px;
-	margin-bottom: 10px;
+	margin-bottom: 60px;
 	text-align: center;
 }
 
