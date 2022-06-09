@@ -3,6 +3,8 @@ body{
 	height: 20vh;
 	background-repeat: no-repeat;
 	background-color: #4C3025;
+	background-size: cover;
+	background-attachment: fixed;
 } 
 
 h1{
