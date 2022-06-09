@@ -67,22 +67,23 @@ let pointCounter = 0;
 		}
 	}
 
-	//question 5/7 Pls fix this code
+	//question 5/7 
 	function questionFive(){
 		for (let i = 0; i < 4; i++){
-			if(howMany < 12){
-				// console.log("Too low! Try again.");
-				alert("Too low! Try again.");
-			}else if(howMany > 12){
-				// console.log("Too high! Try again.");
-				alert("Too high! Try again.");
-			}else if (howMany === 12){
+			let howMany = parseInt(prompt("Guess how many jobs Storm has had"));
+			if (howMany === 12){
 				// console.log("That's correct!");
 				alert("That's correct!");
 				pointCounter += 1;
 				break;
+			}else if(howMany < 12){
+				// console.log("Too low! Try again.");
+				alert("Too low!");
+			}else if(howMany > 12){
+				// console.log("Too high! Try again.");
+				alert("Too high!");
 			}
-		}
+		}alert("The correct answer was 12!");
 	}
 
 	//question 6/7 Pls fix this code
