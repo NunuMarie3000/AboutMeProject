@@ -64,8 +64,8 @@ alert("Nice to meet you, " + userName + ". Welcome to my page!");
 	//question 5/7 
 	function questionFive(){
 		for (let i = 0; i < 4; i++){
-			let howMany = parseInt(prompt("Guess how many jobs Storm has had"));
-			if (howMany === 12){
+			let howMany = prompt("Guess how many jobs Storm has had?")
+			if (howMany == 12){
 				// console.log("That's correct!");
 				alert("That's correct!");
 				pointCounter += 1;
@@ -80,23 +80,47 @@ alert("Nice to meet you, " + userName + ". Welcome to my page!");
 		}alert("The correct answer was 12!");
 	}
 
+
 	//question 6/7 i hate this, but technically it works...technically
 	function questionSix(){
+		let regCount = 0;
 		let charArray = [];
 		charArray =["chel"," esmerelda"," princess kida"]; 
-		for(let attempts = 0; attempts < 6; attempts++){
-			let guess = prompt("Guess 3 favorite characters from Storm's top 10 list");
-			if (guess === "chel" || guess === "princess kida" || guess ==="esmerelda"){
-			// 	console.log("You're correct!");
-				alert("You're correct");
-				pointCounter += 1;
+		for(let i = 0; i< 6; i ++){
+
+			if (regCount == 3){
+				alert("Congrats, you guessed the all!");
 				break;
-			}else{
+			}
+
+			let guess = prompt("Guess 3 favorite characters from Storm's top 10 list");
+			
+			if (guess === "chel" || guess === "princess kida" || guess === "esmerelda"){
+			// 	console.log("You're correct!");
+				regCount++;
+				alert("You're correct");
+	
+				pointCounter += 1;
+			
+		}else{
 				// console.log("I'm sorry, good try");
 				alert("I'm sorry, good try.");
+				alert("Here were the possible answers: " + charArray);
 			}
-		}alert("Here were the possible answers: " + charArray);
+		
 	}
+}
+	
+
+
+
+
+
+
+
+
+
+
 
 	//question 7/7
 	function questionSeven(){
@@ -114,7 +138,9 @@ alert("Nice to meet you, " + userName + ". Welcome to my page!");
 	
 	//put all question functions in a singular array
 	let quizQuestions = [];
-	quizQuestions = [quizAlert, questionOne, questionTwo, questionThree, questionFour, questionFive, questionSix, questionSeven];
+	quizQuestions = [quizAlert, questionOne, questionTwo, questionThree, questionFour,
+		questionFive, questionSix, questionSeven];
+	// quizQuestions = [quizAlert, questionFive];
 
 	//function that'll iterate through array of functions, calling one at a time
 	// function quizTime(){
