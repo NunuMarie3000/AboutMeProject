@@ -1,12 +1,5 @@
 "use strict";
 
-// //prompt on button click
-// function quizTime(){
-
-
-
-
-
 //greetings prompt at webpage load
 let userName = prompt("Hello, beautiful Human! What is your name?");
 alert("Nice to meet you, " + userName + ". Welcome to my page!");
@@ -87,40 +80,23 @@ alert("Nice to meet you, " + userName + ". Welcome to my page!");
 		}alert("The correct answer was 12!");
 	}
 
-	//question 6/7 Pls fix this code
-	// function questionSix(){
-	// 	let charArray = [];
-	// 	charArray = ["chel", "crysta", "korra", "esmerelda", "shego", "miss sara bellum", "prince zuko", "princess kida", "the hex girls", "debbie thornberry"]
-	// 	for (let tries = 0; tries < 6; tries++){
-	// 		let charGuess = prompt("List 1 of animated characters from Storm's Top Ten list.");
-	// 		for (const choice of charArray){
-	// 			if (charGuess !== choice[i].toLocaleLowerCase){
-	// 				// console.log("Nope. Try again!");
-	// 				alert("Nope. Try again.");
-	// 			}
-	// 		}// console.log("You're correct! Here's all the possible answers: " + charArray);
-	// 			alert("You're correct!");
-	// 			pointCounter += 1;
-	// 	}alert("Here's all the possible answers: " + charArray.toUpperCase);
-	// }
-
-	// Pls help me
-	// function questionSix(){
-	// 	let charArray = [];
-	// 	charArray = ["chel", "crysta", "korra", "esmerelda", "shego", "miss sara bellum", "prince zuko", "princess kida", "the hex girls", "debbie thornberry"]
-	// 	let tries = 0;
-	// 	while(tries < 6){
-	// 		let charGuess = prompt("List some of the animated characters from Storm's Top Ten list.");
-	// 		if(charGuess !== choice[i].toLowerCase){
-	// 			//console.log("Nope. Try again!");
-	// 			alert("Nope. Try again.");
-	// 		}else{
-	// 			// console.log("You're correct! Here's all the possible answers: " + charArray);
-	// 			alert("You're correct!");
-	// 			pointCounter += 1;	
-	// 		}
-	// 	}alert("Here's all the possible answers: " + charArray.toUpperCase);
-	// }
+	//question 6/7 i hate this, but technically it works...technically
+	function questionSix(){
+		let charArray = [];
+		charArray =["chel"," esmerelda"," princess kida"]; 
+		for(let attempts = 0; attempts < 6; attempts++){
+			let guess = prompt("Guess 3 favorite characters from Storm's top 10 list");
+			if (guess === "chel" || guess === "princess kida" || guess ==="esmerelda"){
+			// 	console.log("You're correct!");
+				alert("You're correct");
+				pointCounter += 1;
+				break;
+			}else{
+				// console.log("I'm sorry, good try");
+				alert("I'm sorry, good try.");
+			}
+		}alert("Here were the possible answers: " + charArray);
+	}
 
 	//question 7/7
 	function questionSeven(){
@@ -135,18 +111,23 @@ alert("Nice to meet you, " + userName + ". Welcome to my page!");
 		}
 		alert("Thank you so much for taking my quiz, " + userName + " You got " + pointCounter + " points out of 7!");
 	}
-
+	
+	//put all question functions in a singular array
 	let quizQuestions = [];
-	quizQuestions = [quizAlert, questionOne, questionTwo, questionThree, questionFour, questionFive, questionSeven];
+	quizQuestions = [quizAlert, questionOne, questionTwo, questionThree, questionFour, questionFive, questionSix, questionSeven];
 
-	function quizTime(){
-		//this will iterate through array of functions, calling one after the other
+	//function that'll iterate through array of functions, calling one at a time
+	// function quizTime(){
+	// 	for(let qCount = 0; qCount < quizQuestions.length; qCount++){
+	// 		quizQuestions[qCount]();
+	// 	}
+	// }
+
+	document.getElementById("button").onclick = function quizTime(){
 		for(let qCount = 0; qCount < quizQuestions.length; qCount++){
 			quizQuestions[qCount]();
 		}
-	}
-	
-	//begins quiz when user clicks button Pls fix me
+	};
 
 
 
