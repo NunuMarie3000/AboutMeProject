@@ -87,24 +87,39 @@ let pointCounter = 0;
 	}
 
 	//question 6/7 Pls fix this code
+	// function questionSix(){
+	// 	let charArray = [];
+	// 	charArray = ["chel", "crysta", "korra", "esmerelda", "shego", "miss sara bellum", "prince zuko", "princess kida", "the hex girls", "debbie thornberry"]
+	// 	for (let tries = 0; tries < 6; tries++){
+	// 		let charGuess = prompt("List 1 of animated characters from Storm's Top Ten list.");
+	// 		for (const choice of charArray){
+	// 			if (charGuess !== choice[i].toLocaleLowerCase){
+	// 				// console.log("Nope. Try again!");
+	// 				alert("Nope. Try again.");
+	// 			}
+	// 		}// console.log("You're correct! Here's all the possible answers: " + charArray);
+	// 			alert("You're correct!");
+	// 			pointCounter += 1;
+	// 	}alert("Here's all the possible answers: " + charArray.toUpperCase);
+	// }
+
 	function questionSix(){
 		let charArray = [];
 		charArray = ["chel", "crysta", "korra", "esmerelda", "shego", "miss sara bellum", "prince zuko", "princess kida", "the hex girls", "debbie thornberry"]
-		for (let tries = 0; tries < 6; tries++){
+		let tries = 0;
+		while(tries < 6){
 			let charGuess = prompt("List 1 of animated characters from Storm's Top Ten list.");
-			for (const choice of charArray){
-				if (charGuess !== choice.toLocaleLowerCase){
-					// console.log("Nope. Try again!");
-					alert("Nope. Try again.");
-					
-				}else{
-					// console.log("You're correct! Here's all the possible answers: " + charArray);
-					alert("You're correct!");
-				}
-			}break;
-		} alert("Here's all the possible answers: " + charArray.toUpperCase);
+			if(charGuess !== choice[i].toLocaleLowerCase){
+				//console.log("Nope. Try again!");
+				alert("Nope. Try again.");
+			}else{
+				// console.log("You're correct! Here's all the possible answers: " + charArray);
+				alert("You're correct!");
+				pointCounter += 1;	
+			}
+		}alert("Here's all the possible answers: " + charArray.toUpperCase);
 	}
-	
+
 	//question 7/7
 	function questionSeven(){
 		let goals = prompt("Did you have fun reading about Storm?");
