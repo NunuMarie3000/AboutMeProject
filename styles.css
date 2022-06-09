@@ -106,3 +106,12 @@ li{
 #button{
 	text-align: center;
 }
+
+.emoji{
+	font-size:25px;
+}
+
+footer{
+	background-color: #4C3025;
+	text-align: center;
+}
