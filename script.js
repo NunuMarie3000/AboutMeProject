@@ -1,7 +1,7 @@
-// // "use strict"
-// // //greetings prompt at webpage load
-// // let userName = prompt("Hello, beautiful Human! What is your name?");
-// // alert("Nice to meet you, " + userName + ". Welcome to my quiz!");
+"use strict"
+//greetings prompt at webpage load
+// let userName = prompt("Hello, beautiful Human! What is your name?");
+// alert("Nice to meet you, " + userName + ". Welcome to my quiz!");
 
 // //prompt on button click
 // function quizTime(){
@@ -74,6 +74,13 @@
 
 //Starting again
 
+//greetings prompt + get user name
+
+let pointCounter = 0;
+
+let userName = prompt("Hello, beautiful Human! What is your name?");
+alert("Nice to meet you, " + userName + ". Welcome to my quiz!");
+
 	//question 1/7
 	function questionOne(){
 		let pronouns = prompt("Does Storm appreciate it if you refer to them with 'she' or 'her'?");
@@ -83,6 +90,7 @@
 		}else{
 			// console.log("You're correct! Storm uses they/them, not she/her");
 			alert("You're correct! Storm uses they/them, not she/her");
+			pointCounter += 1;
 		}
 }
 	//question 2/7
@@ -91,6 +99,7 @@
 		if (business.toLowerCase() === "y"){
 			// console.log("You're correct! Storm sells their crocheted wares!");
 			alert("You're correct! Storm sells their crocheted wares!");
+			pointCounter += 1;
 		}else{
 			// console.log("I'm sorry, but that isn't correct");
 			alert("I'm sorry, but that isn't correct");
@@ -103,6 +112,7 @@
 		if (education.toLowerCase() === "y"){
 			// console.log("You're correct! Storm studied at the National Theatre Institute.");
 			alert("You're correct! Storm studied at the National Theatre Institute.");
+			pointCounter += 1;
 		}else{
 			// console.log("That answer is incorrect.");
 			alert("That answer is incorrect.");
@@ -118,6 +128,7 @@
 		}else{
 			// console.log("You're correct! Storm has a lot of job experience!");
 			alert("You're correct! Storm has a lot of job experience!");
+			pointCounter += 1;
 		}
 	}
 
@@ -161,13 +172,20 @@
 			// console.log("Damn. Welp, can't win them all");
 			alert("Damn. Welp, can't win them all");
 		}
-		alert("Thank you so much for taking my quiz, " + userName);
+		alert("Thank you so much for taking my quiz, " + userName + " You got " + pointCounter + " points out of 7!");
 	}
 
 	let quizQuestions = [];
 	quizQuestions = [questionOne, questionTwo, questionThree, questionFour, questionFive, questionSix, questionSeven];
-	//this will iterate through array of functions, calling one after the other
-	for(let qCount = 0; qCount < quizQuestions.length; qCount++){
-		quizQuestions[i]();
+
+	function quizTime(){
+		//this will iterate through array of functions, calling one after the other
+		for(let qCount = 0; qCount < quizQuestions.length; qCount++){
+			quizQuestions[qCount]();
+		}
 	}
+	document.getElementById("button").onclick = quizTime();
+
+	console.log(quizQuestions);
+
 
