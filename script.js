@@ -3,8 +3,6 @@
 // //prompt on button click
 // function quizTime(){
 
-// 	alert("Welcome to the Stormy Time Quiz. Please respond to each question with Y for yes and N for no");
-
 
 
 
@@ -14,8 +12,11 @@ let userName = prompt("Hello, beautiful Human! What is your name?");
 alert("Nice to meet you, " + userName + ". Welcome to my page!");
 
 //keep tally of total points
-let pointCounter = 0;
-
+	let pointCounter = 0;
+	function quizAlert(){
+		alert("Welcome to the Stormy Time Quiz. Please respond to each question with Y for yes and N for no");
+	}
+	
 	//question 1/7
 	function questionOne(){
 		let pronouns = prompt("Does Storm appreciate it if you refer to them with 'she' or 'her'?");
@@ -103,22 +104,23 @@ let pointCounter = 0;
 	// 	}alert("Here's all the possible answers: " + charArray.toUpperCase);
 	// }
 
-	function questionSix(){
-		let charArray = [];
-		charArray = ["chel", "crysta", "korra", "esmerelda", "shego", "miss sara bellum", "prince zuko", "princess kida", "the hex girls", "debbie thornberry"]
-		let tries = 0;
-		while(tries < 6){
-			let charGuess = prompt("List 1 of animated characters from Storm's Top Ten list.");
-			if(charGuess !== choice[i].toLocaleLowerCase){
-				//console.log("Nope. Try again!");
-				alert("Nope. Try again.");
-			}else{
-				// console.log("You're correct! Here's all the possible answers: " + charArray);
-				alert("You're correct!");
-				pointCounter += 1;	
-			}
-		}alert("Here's all the possible answers: " + charArray.toUpperCase);
-	}
+	// Pls help me
+	// function questionSix(){
+	// 	let charArray = [];
+	// 	charArray = ["chel", "crysta", "korra", "esmerelda", "shego", "miss sara bellum", "prince zuko", "princess kida", "the hex girls", "debbie thornberry"]
+	// 	let tries = 0;
+	// 	while(tries < 6){
+	// 		let charGuess = prompt("List some of the animated characters from Storm's Top Ten list.");
+	// 		if(charGuess !== choice[i].toLowerCase){
+	// 			//console.log("Nope. Try again!");
+	// 			alert("Nope. Try again.");
+	// 		}else{
+	// 			// console.log("You're correct! Here's all the possible answers: " + charArray);
+	// 			alert("You're correct!");
+	// 			pointCounter += 1;	
+	// 		}
+	// 	}alert("Here's all the possible answers: " + charArray.toUpperCase);
+	// }
 
 	//question 7/7
 	function questionSeven(){
@@ -135,7 +137,7 @@ let pointCounter = 0;
 	}
 
 	let quizQuestions = [];
-	quizQuestions = [questionOne, questionTwo, questionThree, questionFour, questionFive, questionSix, questionSeven];
+	quizQuestions = [quizAlert, questionOne, questionTwo, questionThree, questionFour, questionFive, questionSeven];
 
 	function quizTime(){
 		//this will iterate through array of functions, calling one after the other
@@ -145,6 +147,6 @@ let pointCounter = 0;
 	}
 	
 	//begins quiz when user clicks button Pls fix me
-	document.getElementById("button").onclick = quizTime();
+
 
 
