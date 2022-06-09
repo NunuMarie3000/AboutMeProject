@@ -1,4 +1,4 @@
-"use strict"
+"use strict";
 
 // //prompt on button click
 // function quizTime(){
@@ -16,7 +16,7 @@ alert("Nice to meet you, " + userName + ". Welcome to my page!");
 	function quizAlert(){
 		alert("Welcome to the Stormy Time Quiz. Please respond to each question with Y for yes and N for no");
 	}
-	
+
 	//question 1/7
 	function questionOne(){
 		let pronouns = prompt("Does Storm appreciate it if you refer to them with 'she' or 'her'?");
