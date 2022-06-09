@@ -1,85 +1,20 @@
 "use strict"
-//greetings prompt at webpage load
-// let userName = prompt("Hello, beautiful Human! What is your name?");
-// alert("Nice to meet you, " + userName + ". Welcome to my quiz!");
 
 // //prompt on button click
 // function quizTime(){
 
 // 	alert("Welcome to the Stormy Time Quiz. Please respond to each question with Y for yes and N for no");
 
-// 	//question 1/5
-// 	let pronouns = prompt("Does Storm appreciate it if you refer to them with 'she' or 'her'?");
-// 	if (pronouns.toLowerCase() === "y"){
-// 		// console.log("That answer is definitely not correct.");
-// 		alert("That answer is definitely not correct.");
-// 	}else{
-// 		// console.log("You're correct! Storm uses they/them, not she/her");
-// 		alert("You're correct! Storm uses they/them, not she/her");
-// 	}
 
-// 	//question 2/5
-// 	let business = prompt("Is Storm a small business owner?");
-// 	if (business.toLowerCase() === "y"){
-// 		// console.log("You're correct! Storm sells their crocheted wares!");
-// 		alert("You're correct! Storm sells their crocheted wares!");
-// 	}else{
-// 		// console.log("I'm sorry, but that isn't correct");
-// 		alert("I'm sorry, but that isn't correct");
-// 	}
 
-// 	//question 3/5
-// 	let education = prompt("Did Storm ever study theatre?");
-// 	if (education.toLowerCase() === "y"){
-// 		// console.log("You're correct! Storm studied at the National Theatre Institute.");
-// 		alert("You're correct! Storm studied at the National Theatre Institute.");
-// 	}else{
-// 		// console.log("That answer is incorrect.");
-// 		alert("That answer is incorrect.");
-// 	}
 
-// 	//question 4/5
-// 	let jobs = prompt("Can Stormy keep a job?")
-// 	if (jobs.toLowerCase() === "y"){
-// 		// console.log("You didn't really read, did you?");
-// 		alert("You didn't really read, did you?");
-// 	}else{
-// 		// console.log("You're correct! Storm has a lot of job experience!");
-// 		alert("You're correct! Storm has a lot of job experience!");
-// 	}
 
-// 	//question 5/5
-// 	let goals = prompt("Did you have fun reading about Storm?");
-// 	if (goals.toLowerCase() === "y"){
-// 		// console.log("Aww, I love that!");
-// 		alert("Aww, I love that!");
-// 	}else{
-// 		// console.log("Damn. Welp, can't win them all");
-// 		alert("Damn. Welp, can't win them all");
-// 	}
-// 	alert("Thank you so much for taking my quiz, " + userName);
-// }
-
-//question 6/7
-// let howMany = parseInt(prompt("How many jobs do you think Storm has had so far? Type a number."));
-// for (let i = 0; i < 4; i++){
-// 	if (howMany === 12){
-// 		console.log("That's correct!")
-// 	}else{
-// 		while (howMany !== 12){
-// 			console.log("I'm sorry, try again!");
-// 		}
-// 	}console.log("The correct answer is 12!");
-//}
-
-//Starting again
-
-//greetings prompt + get user name
-
-let pointCounter = 0;
-
+//greetings prompt at webpage load
 let userName = prompt("Hello, beautiful Human! What is your name?");
-alert("Nice to meet you, " + userName + ". Welcome to my quiz!");
+alert("Nice to meet you, " + userName + ". Welcome to my page!");
+
+//keep tally of total points
+let pointCounter = 0;
 
 	//question 1/7
 	function questionOne(){
@@ -134,15 +69,19 @@ alert("Nice to meet you, " + userName + ". Welcome to my quiz!");
 
 	//question 5/7 Pls fix this code
 	function questionFive(){
-		let howMany = parseInt(prompt("How many jobs do you think Storm has had so far? Type a number."));
 		for (let i = 0; i < 4; i++){
-			if (howMany === 12){
-				console.log("That's correct!")
-			}else{
-				while (howMany !== 12){
-					console.log("I'm sorry, try again!");
-				}
-			}console.log("The correct answer is 12!");
+			if(howMany < 12){
+				// console.log("Too low! Try again.");
+				alert("Too low! Try again.");
+			}else if(howMany > 12){
+				// console.log("Too high! Try again.");
+				alert("Too high! Try again.");
+			}else if (howMany === 12){
+				// console.log("That's correct!");
+				alert("That's correct!");
+				pointCounter += 1;
+				break;
+			}
 		}
 	}
 
@@ -153,13 +92,16 @@ alert("Nice to meet you, " + userName + ". Welcome to my quiz!");
 		for (let tries = 0; tries < 6; tries++){
 			let charGuess = prompt("List 1 of animated characters from Storm's Top Ten list.");
 			for (const choice of charArray){
-				if (charGuess === choice.toLocaleLowerCase){
-					console.log("Correct!");
+				if (charGuess !== choice.toLocaleLowerCase){
+					// console.log("Nope. Try again!");
+					alert("Nope. Try again.");
+					
 				}else{
-					console.log("Nope. Try again.");
+					// console.log("You're correct! Here's all the possible answers: " + charArray);
+					alert("You're correct!");
 				}
-			}
-		}
+			}break;
+		} alert("Here's all the possible answers: " + charArray.toUpperCase);
 	}
 	
 	//question 7/7
@@ -168,6 +110,7 @@ alert("Nice to meet you, " + userName + ". Welcome to my quiz!");
 		if (goals.toLowerCase() === "y"){
 			// console.log("Aww, I love that!");
 			alert("Aww, I love that!");
+			pointCounter += 1;
 		}else{
 			// console.log("Damn. Welp, can't win them all");
 			alert("Damn. Welp, can't win them all");
@@ -184,8 +127,8 @@ alert("Nice to meet you, " + userName + ". Welcome to my quiz!");
 			quizQuestions[qCount]();
 		}
 	}
+	
+	//begins quiz when user clicks button Pls fix me
 	document.getElementById("button").onclick = quizTime();
-
-	console.log(quizQuestions);
 
 
