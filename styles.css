@@ -1,22 +1,23 @@
 body{
-	background-image:url("https://scontent-atl3-1.xx.fbcdn.net/v/t1.6435-9/187459170_3856467861073074_4578499984045444436_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=d4W9Ft1iN5oAX9FHTxA&_nc_ht=scontent-atl3-1.xx&oh=00_AT9njP7pBnOb2ZGTGAQqJXky1A1yJ0MbIrJRfuQjHyK97w&oe=62C74A29");
-	height: 20vh;
+	background-image:url("./images/cutesuitseniorpiccropped.jpg");
 	background-repeat: no-repeat;
 	background-color: #4C3025;
-	background-size: cover;
 	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	height: 80vh;
 } 
 
 h1{
-	 background-color: rgb(254, 254, 254, 0.7);
-	 margin-bottom: 20px;
-	 padding: 20px;
-	 border: 1px solid #888;
-	 width: 80%;
-	 border-radius: 30px;
-	 text-align: center;
-	 font-family: sans-serif;
-	 margin-right: 20px;
+	background-color: rgb(254, 254, 254, 0.7);
+	margin-bottom: 20px;
+	padding: 20px;
+	border: 1px solid #888;
+	width: 60%;
+	border-radius: 30px;
+	text-align: center;
+	font-family: sans-serif;
+	margin-right: 20px;
 }
 
 h3{
@@ -42,65 +43,34 @@ li{
 
 #content{
 	justify-content: right;
-	margin-right: 250px;
+	margin-right: 300px;
 }
 
-#bio-container{
-	
-	 background-color: rgb(254, 254, 254, 0.7);
-	 padding: 5px;
-	 border: 1px solid #888;
-	 width: 80%;
-	 border-radius: 30px;
-	 margin-bottom: 10px;
+[id*="container"]{
+	background-color: rgb(254, 254, 254, 0.7);
+	padding: 5px;
+	border: 1px solid #888;
+	width: 80%;
+	border-radius: 30px;
+	margin-bottom: 10px;
 }
 
 #school{
 	
-	 background-color: rgb(254, 254, 254, 0.7);
-	 padding: 5px;
-	 border: 1px solid #888;
-	 width: 80%;
-	 border-radius: 30px;
+	background-color: rgb(254, 254, 254, 0.7);
+	padding: 5px;
+	border: 1px solid #888;
+	width: 80%;
+	border-radius: 30px;
 	margin-bottom: 10px;
-}
-
-#job-container{
-	
-	 background-color: rgb(254, 254, 254, 0.7);
-	 padding: 5px;
-	 border: 1px solid #888;
-	 width: 80%;
-	 border-radius: 30px;
-	margin-bottom: 10px;
-}
-
-#goals-container{
-	
-	 background-color: rgb(254, 254, 254, 0.7);
-	 padding: 5px;
-	 border: 1px solid #888;
-	 width: 80%;
-	 border-radius: 30px;
-	margin-bottom: 10px;
-}
-
-#char-container{
-	
-	 background-color: rgb(254, 254, 254, 0.7);
-	 padding: 5px;
-	 border: 1px solid #888;
-	 width: 80%;
-	 border-radius: 30px;
-	 margin-bottom: 10px;
 }
 
 #button-container{
-	 background-color: rgb(254, 254, 254, 0.7);
-	 padding: 5px;
-	 border: 1px solid #888;
-	 width: 80%;
-	 border-radius: 30px;
+	background-color: rgb(254, 254, 254, 0.7);
+	padding: 5px;
+	border: 1px solid #888;
+	width: 80%;
+	border-radius: 30px;
 	margin-bottom: 60px;
 	text-align: center;
 }
@@ -109,11 +79,17 @@ li{
 	text-align: center;
 }
 
-.emoji{
-	font-size:25px;
+header{
+	text-align: right;
+	font-weight: bold;
+	color:#E7F0EF;
 }
 
 footer{
-	background-color: #4C3025;
 	text-align: center;
+	font-weight: bold;
+	background-color: rgba(159, 46, 6, 0.7);
+	border-top-right-radius: 30px;
+	border-top-left-radius: 30px;
+	color:#E7F0EF;
 }
